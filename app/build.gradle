@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 'android-N'
-    buildToolsVersion "24.0.0 rc1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.hitherejoe.notifi"
-        minSdkVersion 'N'
-        targetSdkVersion 'N'
+        minSdkVersion 23
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -26,7 +26,7 @@ android {
 }
 
 dependencies {
-    final SUPPORT_LIBRARY_VERSION = '24.0.0-alpha1'
+    final SUPPORT_LIBRARY_VERSION = '23.3.0'
     final DAGGER_VERSION = '2.0.2'
 
     def daggerCompiler = "com.google.dagger:dagger-compiler:$DAGGER_VERSION"

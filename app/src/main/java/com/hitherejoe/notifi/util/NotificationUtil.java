@@ -124,9 +124,7 @@ public class NotificationUtil {
         PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent, 0);
 
         Notification.Builder builder = createCustomNotificationBuilder(context);
-        builder.setCustomContentView(remoteViews)
-                .setStyle(new Notification.DecoratedCustomViewStyle())
-                .setPriority(Notification.PRIORITY_HIGH)
+        builder.setPriority(Notification.PRIORITY_HIGH)
                 .setVibrate(new long[0])
                 .setContentIntent(contentIntent);
 
@@ -181,7 +179,7 @@ public class NotificationUtil {
                 R.drawable.ic_priority_high_primary_24dp);
 
         Notification.Builder builder = createCustomNotificationBuilder(context);
-        builder.setCustomContentView(remoteViews).setStyle(new Notification.DecoratedCustomViewStyle());
+        //builder.setCustomContentView(remoteViews).setStyle(new Notification.DecoratedCustomViewStyle());
 
         showNotification(context, builder.build(), 0);
     }
@@ -193,8 +191,8 @@ public class NotificationUtil {
                 R.drawable.ic_priority_high_primary_24dp);
 
         Notification.Builder builder = createCustomNotificationBuilder(context);
-        builder.setCustomBigContentView(remoteViews)
-                .setStyle(new Notification.DecoratedCustomViewStyle());
+        //builder.setCustomBigContentView(remoteViews)
+        //        .setStyle(new Notification.DecoratedCustomViewStyle());
 
         showNotification(context, builder.build(), 0);
     }
@@ -210,9 +208,9 @@ public class NotificationUtil {
                 R.drawable.ic_priority_high_primary_24dp);
 
         Notification.Builder builder = createCustomNotificationBuilder(context);
-        builder.setCustomContentView(remoteViews)
-                .setCustomBigContentView(bigRemoteView)
-                .setStyle(new Notification.DecoratedCustomViewStyle());
+        //builder.setCustomContentView(remoteViews)
+        //        .setCustomBigContentView(bigRemoteView)
+        //        .setStyle(new Notification.DecoratedCustomViewStyle());
 
         showNotification(context, builder.build(), 0);
     }
@@ -223,8 +221,8 @@ public class NotificationUtil {
                 "This is a custom media layout", R.drawable.ic_play_arrow_primary_24dp);
 
         Notification.Builder builder = createCustomNotificationBuilder(context);
-        builder.setCustomContentView(remoteViews)
-                .setStyle(new Notification.DecoratedMediaCustomViewStyle());
+        //builder.setCustomContentView(remoteViews)
+        //        .setStyle(new Notification.DecoratedMediaCustomViewStyle());
 
         showNotification(context, builder.build(), 0);
     }
